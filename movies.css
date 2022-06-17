@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    width: 92%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0 15px 0;
+    text-align: center;
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+nav p{
+    font-size: 1.5em;
+}
+
+main#movies{
+    width: 89%;
+    margin: 120px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.movie{
+    flex: 25%;
+    text-align: center;
+}
+
+.movie img{
+    width: 250px;
+    height: 400px;
+}
+
+.movie p{
+    font-size: 1.1em;
+    margin: 5px;
+}
+
+section#pagination{
+    width: 89%;
+    display: flex;
+    justify-content: center;
+    margin: 45px auto;
+}
+
+section#pagination div , section#pagination a{
+    padding: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a.page#active, section#pagination > div:hover, section#pagination > a:hover{
+    background: black;
+    color: white;
+}
+
+hr{
+    width: 89%;
+    margin: 0 auto 45px auto;
+}
+
+section#about{
+    width: 80%;    
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#about p.header{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section#about > img{
+    width: auto;
+    height: auto;   
+}
+
+section#about p.title{
+    margin-top: 40px;
+    font-size: 1.35em;
+}
+
+section#about p.mission{
+    margin: 20px;
+}
+
+section#about p.about{
+    text-align: center;
+    margin: 0 auto 100px auto;
+}
