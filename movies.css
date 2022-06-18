@@ -5,30 +5,74 @@
 }
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+}
+
+div.side-navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    box-shadow: 1px 1px 7px rgb(197, 196, 196);
+    background: white;
+}
+
+div.side-navigation a{
+    font-size: 1.5em;
+    display: block;
+    padding: 30px 0 30px 30px 
+}
+
+div.side-navigation a:hover{
+    background: rgb(197, 196, 196);
+}
+
+i#close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+}
+
+i#close:hover{
+    color: gray;
 }
 
 nav{
-    width: 92%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 10px 0 15px 0;
+    padding: 0 4%;
     text-align: center;
     z-index: 1;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     background: white;
 }
 
+div#menu{
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 15px;
+}
+
+div#menu:hover{
+    background: rgb(197, 196, 196);
+}
+
 nav p{
     font-size: 1.5em;
+    padding: 15px 0;
 }
 
 main#movies{
-    width: 89%;
+    width: 92%;
     margin: 120px auto 0 auto;
     display: flex;
     justify-content: space-between;
@@ -44,11 +88,24 @@ main#movies{
 .movie img{
     width: 250px;
     height: 400px;
+    box-shadow: 1px 1px 7px gray;
 }
 
-.movie p{
+p.movie-name{
     font-size: 1.1em;
-    margin: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+summary{
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+p.review{
+    font-size: 0.85em;
+    margin-top: 3px;
 }
 
 section#pagination{
@@ -59,7 +116,7 @@ section#pagination{
 }
 
 section#pagination div , section#pagination a{
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
 }
 
@@ -73,7 +130,7 @@ a.page#active, section#pagination > div:hover, section#pagination > a:hover{
     color: white;
 }
 
-hr{
+hr:not(#blog-post-line){
     width: 89%;
     margin: 0 auto 45px auto;
 }
@@ -90,21 +147,123 @@ section#about p.header{
     text-align: center;
 }
 
-section#about > img{
-    width: auto;
+img#tomi-picture{
+    width: 500px;
     height: auto;   
 }
 
 section#about p.title{
     margin-top: 40px;
     font-size: 1.35em;
+    font-weight: 600;
 }
 
 section#about p.mission{
+    font-size: 0.90em;
     margin: 20px;
+    font-style: italic;
 }
 
 section#about p.about{
+    font-size: 0.90em;
     text-align: center;
     margin: 0 auto 100px auto;
+    word-spacing: 3px;
+}
+
+section.footer{
+    width: 89%;
+    margin: 20px auto;
+}
+
+section.footer img{
+    width: 60px;
+    height: auto;
+}
+
+section.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+span{
+    text-decoration: underline;
+}
+
+p.footer-heading{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    word-spacing: 3px;
+}
+
+p.footer-text{
+    font-size: 0.90em;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+section.footer p:not(.footer-heading, .number){
+    font-size: 0.90em;
+}
+
+div.blog-posts div img{
+    float: left;
+    margin-right: 10px;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+}
+
+div.blog-posts div > div{
+    padding: 15px 0 15px 5px;
+}
+
+div.blog-post:hover{
+    background: rgb(197, 196, 196);
+}
+
+hr#blog-post-line{
+    width: 100%;
+    margin: 0;
+}
+
+
+p.number{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+div.tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+a.tag{
+    font-size: 0.8em;
+    padding: 2px;
+    margin: 0 5px 5px 0;
+    background: rgb(207, 207, 207);
+}
+
+a.tag#active{
+    font-size: 0.8em;
+    padding: 4px;
+    margin: 0 5px 5px 0;
+    background: black;
+    color: white;
+}
+
+a.tag:not(#active):hover{
+    font-size: 0.8em;
+    padding: 4px;
+    margin: 0 5px 5px 0;
+    background: black;
+    color: white;
+    transition: all ease 0.1s;
 }
