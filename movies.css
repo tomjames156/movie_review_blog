@@ -176,23 +176,21 @@ section#about p.about{
     word-spacing: 3px;
 }
 
-section.footer{
-    width: 89%;
-    margin: 20px auto;
-}
-
 section.footer img{
     width: 60px;
     height: auto;
 }
 
 section.footer{
+    width: 89%;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
 }
 
-span{
+p.w3 a{
+    color: black;
     text-decoration: underline;
 }
 
@@ -273,4 +271,43 @@ a.tag:not(#active):hover{
     transition: all ease 0.1s;
 }
 
-/* 600px */
+/* 600px  
+also change sidenav sfor less than 700px */
+
+@media screen and (max-width: 600px){
+    nav{
+        padding: 0 5px;
+    }
+
+    main#movies{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .movie img{
+        width: 100%;
+        height: auto;
+    }
+
+    section#about{
+        width: 87%;
+    }
+
+    img#tomi-picture{
+        width: 100%;
+    }
+
+    section.footer{
+        width: 87%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    section.footer > footer, section.footer > div{
+        margin-bottom: 30px;
+    }
+
+    div.blog-posts div > div{
+        padding: 15px 0 15px 15px;
+    }
+}

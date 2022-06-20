@@ -9,7 +9,7 @@ function closeMenu(){
 }
 
 function openMenu(){
-    sideNav.style.width = "25%";
+    sideNav.style.width = "30%";
     for(let link of links){
         link.style.display = "block";
     }
