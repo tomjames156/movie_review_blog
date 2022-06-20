@@ -293,10 +293,6 @@ a.tag:not(#active):hover{
         display: none;
     }
 
-    i#close{
-        display: none;
-    }
-
     main#movies{
         width: 90%;
         flex-direction: column;
