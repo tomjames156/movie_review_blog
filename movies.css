@@ -274,17 +274,14 @@ a.tag:not(#active):hover{
 
 @media screen and (max-width: 600px){
     nav{
-        padding: 0 100px 0 5px;
-        /* justify-content: space-around */
+        padding: 0 15px 0 5px;
+        justify-content: left;
+        column-gap: 20%;
     }
     
     nav a{
         display: none;
     }
-
-    /* nav p{
-        text-align: center;    
-    } */
 
     main#movies{
         width: 90%;
