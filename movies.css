@@ -69,7 +69,7 @@ div#menu:hover{
     background: rgb(197, 196, 196);
 }
 
-nav a{
+nav > a{
     font-size: 1.5em;
     padding: 15px 0;
     text-decoration: none;
