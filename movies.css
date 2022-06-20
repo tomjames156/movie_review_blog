@@ -8,6 +8,10 @@ body{
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
 }
 
+div.main-content{
+    opacity: 100%;
+}
+
 div.side-navigation{
     position: fixed;
     top: 0;
