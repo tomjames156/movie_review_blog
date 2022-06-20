@@ -97,6 +97,11 @@ main#movies{
     width: 250px;
     height: 400px;
     box-shadow: 1px 1px 7px gray;
+    cursor: pointer;
+}
+
+.movie img:hover{
+    opacity: 70%;
 }
 
 p.movie-name{
@@ -232,6 +237,7 @@ div.blog-posts div > div{
 
 div.blog-post:hover{
     background: rgb(197, 196, 196);
+    cursor: pointer;
 }
 
 hr#blog-post-line{
