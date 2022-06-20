@@ -276,7 +276,6 @@ a.tag:not(#active):hover{
     nav{
         padding: 0 15px 0 5px;
         justify-content: left;
-        column-gap: 20%;
     }
     
     nav a{
