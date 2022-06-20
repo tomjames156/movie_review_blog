@@ -69,7 +69,7 @@ div#menu:hover{
     background: rgb(197, 196, 196);
 }
 
-nav > a{
+nav > a, nav > p{
     font-size: 1.5em;
     padding: 15px 0;
     text-decoration: none;
@@ -274,8 +274,17 @@ a.tag:not(#active):hover{
 
 @media screen and (max-width: 600px){
     nav{
-        padding: 0 15px 0 5px;
+        padding: 0 100px 0 5px;
+        /* justify-content: space-around */
     }
+    
+    nav a{
+        display: none;
+    }
+
+    /* nav p{
+        text-align: center;    
+    } */
 
     main#movies{
         width: 90%;

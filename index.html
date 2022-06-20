@@ -19,15 +19,16 @@
 </head>
 <body>
     <div class="side-navigation">
-        <a href="#">Movies</a>
-        <a href="#">About Me</a>
-        <a href="#">Genres</a>
+        <a href="#movies">Movies</a>
+        <a href="#about">About Me</a>
+        <a href="#popular-tags">Genres</a>
+        <a href="mailto:tomjames156@gmail.com">Email</a>
         <i id="close" onclick="closeMenu()" class="fa-solid fa-xmark"></i>
     </div>
     <nav>
         <div id="menu" onclick="openMenu()">☰</div>
-        <a href="#">Weekly Movie Reviews</a>
-        <a href="#">Mail</a>
+        <p>Weekly Movie Reviews</p>
+        <a href="mailto:tomjames156@gmail.com">Mail</a>
     </nav>
     <main id="movies">
         <div class="movie">
@@ -145,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <div class="popular-tags">
+        <div id="popular-tags">
             <p class="footer-heading">POPULAR TAGS</p>
             <div class="tags">
                 <a href="#" id="active" class="tag">Recently Watched</a>
