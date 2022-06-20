@@ -69,9 +69,10 @@ div#menu:hover{
     background: rgb(197, 196, 196);
 }
 
-nav p{
+nav a{
     font-size: 1.5em;
     padding: 15px 0;
+    text-decoration: none;
 }
 
 main#movies{
@@ -271,12 +272,9 @@ a.tag:not(#active):hover{
     transition: all ease 0.1s;
 }
 
-/* 600px  
-also change sidenav sfor less than 700px */
-
 @media screen and (max-width: 600px){
     nav{
-        padding: 0 5px;
+        padding: 0 15px 0 5px;
     }
 
     main#movies{
