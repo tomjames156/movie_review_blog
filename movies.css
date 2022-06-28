@@ -89,9 +89,13 @@ main#movies{
     row-gap: 20px;
 }
 
-.movie{
+div.movie{
     flex: 25%;
     text-align: center;
+}
+
+div.image-container{
+    position: relative;
 }
 
 .movie img{
@@ -103,6 +107,19 @@ main#movies{
 
 .movie img:hover{
     opacity: 70%;
+}
+
+div.movie div.about-movie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.about-movie i{
+    font-size: 1.3em;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
 }
 
 p.movie-name{
