@@ -119,6 +119,7 @@ div.movie div.about-movie{
 div.about-movie i{
     font-size: 1.3em;
     color: yellow;
+    display: inline;
     text-shadow: 1px 1px 1px black;
 }
 
