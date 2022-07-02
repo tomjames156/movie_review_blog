@@ -7,7 +7,12 @@
     <title>Tomi's Movie Opinions</title>
     <link rel="stylesheet" href="./movies.css">
 
-    <!-- Google Font -->
+    <!-- Google Font  Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Google Font  Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Roboto:wght@300;400&family=Scope+One&display=swap" rel="stylesheet">
@@ -35,8 +40,8 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/stranger_things4.jpg" alt="stranger things">
-                    <div class="about-movie">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Sci-Fi', 'Horror'])" onmouseleave="reset(this)" src="images/stranger_things4.jpg" alt="stranger things">
+                    <div class="about-movie" onclick="event.stopPropagation()">
                     </div>
                 </div>
                 <p class="movie-name">Stranger Things Season 4</p>
@@ -48,7 +53,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/fear_street.webp" alt="fear street">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Horror', 'Murder Mystery'], true)" onmouseout="reset(this)" src="images/fear_street.webp" alt="fear street">
                     <div class="about-movie">
                     </div>
                 </div>
@@ -61,7 +66,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/icarly.jpg" alt="iCarly">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 3.5, ['Sitcom'], true)" onmouseout="reset(this)" src="images/icarly.jpg" alt="iCarly">
                     <div class="about-movie">
                     </div>
                 </div>
@@ -74,7 +79,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/everything_evrerywhere_all.jpg" alt="everything everywhere all at once">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 5, ['Sci-Fi', 'Horror', 'Comedy', 'Action'], true)" onmouseout="reset(this)" src="images/everything_evrerywhere_all.jpg" alt="everything everywhere all at once">
                     <div class="about-movie">
                         <div class="stars"></div>
                     </div>
@@ -88,7 +93,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img  class="movie-img"src="images/murder_on_orient_express.jpeg" alt="murder on orient express">
+                    <img  class="movie-img" onmouseover="aboutMovie(this, 4, ['Murder Mystery'], true)" onmouseout="reset(this)" src="images/murder_on_orient_express.jpeg" alt="murder on orient express">
                     <div class="about-movie">
                     </div>
                 </div>
@@ -101,7 +106,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/death_on_the_nile.jpg" alt="death on the nile">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4, ['Murder Mystery'], true)" onmouseout="reset(this)" src="images/death_on_the_nile.jpg" alt="death on the nile">
                     <div class="about-movie">
                     </div>
                 </div>
@@ -114,7 +119,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/sonic_2.jpg" alt="sonic the hedgehog 2">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Sci-Fi', 'Comedy', 'Animation'], true)" onmouseout="reset(this)" src="images/sonic_2.jpg" alt="sonic the hedgehog 2">
                     <div class="about-movie">
                     </div>
                 </div>
@@ -127,7 +132,7 @@
 
             <div class="movie">
                 <div class="image-container">
-                    <img class="movie-img" src="images/the_afterparty.jpg" alt="The Afterparty">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 5, ['Murder Mystery', 'Comedy']), true" onmouseout="reset(this)" src="images/the_afterparty.jpg" alt="The Afterparty">
                     <div class="about-movie">
                     </div>
                 </div>
