@@ -102,7 +102,7 @@ div.image-container{
     width: 250px;
     height: 400px;
     box-shadow: 1px 1px 7px gray;
-    cursor: pointer;
+    cursor: default;
 }
 
 ul.genres{
@@ -128,7 +128,7 @@ div.about-movie i{
     color: yellow;
     display: inline;
     text-shadow: 2px 2px 5px black;
-    cursor: pointer;
+    cursor: default;
 }
 
 div.about-movie i.empty{
