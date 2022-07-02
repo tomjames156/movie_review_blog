@@ -7,7 +7,12 @@
     <title>Tomi's Movie Opinions</title>
     <link rel="stylesheet" href="./movies.css">
 
-    <!-- Google Font -->
+    <!-- Google Font  Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Google Font  Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Roboto:wght@300;400&family=Scope+One&display=swap" rel="stylesheet">
@@ -32,70 +37,112 @@
     </nav>
     <div class="main-content">
         <main id="movies">
+
             <div class="movie">
-                <img src="images/stranger_things4.jpg" alt="stranger things">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Sci-Fi', 'Horror'])" onmouseleave="reset(this)" src="images/stranger_things4.jpg" alt="stranger things">
+                    <div class="about-movie" onclick="event.stopPropagation()">
+                    </div>
+                </div>
                 <p class="movie-name">Stranger Things Season 4</p>
                 <details>
                     <summary>A Sci-fi/Horror series set in the 80s</summary>
                     <p class="review">Interesting, funny and a bit more graphic than any of the previous seasons</p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/fear_street.webp" alt="fear street">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Horror', 'Murder Mystery'], true)" onmouseout="reset(this)" src="images/fear_street.webp" alt="fear street">
+                    <div class="about-movie">
+                    </div>
+                </div>
                 <p class="movie-name">Fear Street Trilogy</p>
                 <details>
                     <summary>Horror Trilogy about a cursed town called Shady side</summary>
                     <p class="review">Awesome, entertaining and quite graphic </p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/icarly.jpg" alt="iCarly">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 3.5, ['Sitcom'], true)" onmouseout="reset(this)" src="images/icarly.jpg" alt="iCarly">
+                    <div class="about-movie">
+                    </div>
+                </div>
                 <p class="movie-name">iCarly Reboot Season 2</p>
                 <details>
                     <summary>iCarly but the characters are older and funnier</summary>
                     <p class="review">Quite funny, kinda cringe but in a Gen Z social media era way</p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/everything_evrerywhere_all.jpg" alt="everything everywhere all at once">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 5, ['Sci-Fi', 'Horror', 'Comedy', 'Action'], true)" onmouseout="reset(this)" src="images/everything_evrerywhere_all.jpg" alt="everything everywhere all at once">
+                    <div class="about-movie">
+                        <div class="stars"></div>
+                    </div>
+                </div>
                 <p class="movie-name">Everything Everywhere All At Once</p>
                 <details>
                     <summary>A Sci-fi movie based on the theory of multiple universes</summary>
                     <p>A very interesting synergy of different movie genres that kept me thoroughly entertained and LMAO~ing</p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/murder_on_orient_express.jpeg" alt="murder on orient express">
+                <div class="image-container">
+                    <img  class="movie-img" onmouseover="aboutMovie(this, 4, ['Murder Mystery'], true)" onmouseout="reset(this)" src="images/murder_on_orient_express.jpeg" alt="murder on orient express">
+                    <div class="about-movie">
+                    </div>
+                </div>
                 <p class="movie-name">Murder On Orient The Express</p>
                 <details>
                     <summary>A murder investigation on the orient express train</summary>
                     <p class="review">A very literal name for the movie but quite interesting</p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/death_on_the_nile.jpg" alt="death on the nile">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4, ['Murder Mystery'], true)" onmouseout="reset(this)" src="images/death_on_the_nile.jpg" alt="death on the nile">
+                    <div class="about-movie">
+                    </div>
+                </div>
                 <p class="movie-name">Death On The Nile</p>
                 <details>
                     <summary>A murder mystery taking place on the Nile</summary>
                     <p class="review">A more entertaining adventure of Hercule Poirot also with a very literal name</p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/sonic_2.jpg" alt="sonic the hedgehog 2">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Sci-Fi', 'Comedy', 'Animation'], true)" onmouseout="reset(this)" src="images/sonic_2.jpg" alt="sonic the hedgehog 2">
+                    <div class="about-movie">
+                    </div>
+                </div>
                 <p class="movie-name">Sonic The Hedgehog 2</p>
                 <details>
                     <summary>Dr Eggman escapes the Mushroom planet and tries to defeat sonic with his new partner Knuckles</summary>
                     <p class="review">Very funny and entertaining </p>
                 </details>
             </div>
+
             <div class="movie">
-                <img src="images/the_afterparty.jpg" alt="The Afterparty">
+                <div class="image-container">
+                    <img class="movie-img" onmouseover="aboutMovie(this, 5, ['Murder Mystery', 'Comedy']), true" onmouseout="reset(this)" src="images/the_afterparty.jpg" alt="The Afterparty">
+                    <div class="about-movie">
+                    </div>
+                </div>
                 <p class="movie-name">The Afterparty</p>
                 <details>
                     <summary>A murder mystery about the murder of a superstar at his high school re-union party</summary>
                     <p class="review">Funniest show I've watched in a while. Fr</p>
                 </details>
             </div>
+
         </main>
         <section id="pagination">
             <div class="nav">&laquo;</div>

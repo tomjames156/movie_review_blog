@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins','Bitter', Georgia, 'Times New Roman', Times, serif;
 }
 
 div.main-content{
@@ -89,9 +89,13 @@ main#movies{
     row-gap: 20px;
 }
 
-.movie{
+div.movie{
     flex: 25%;
     text-align: center;
+}
+
+div.image-container{
+    position: relative;
 }
 
 .movie img{
@@ -101,8 +105,34 @@ main#movies{
     cursor: pointer;
 }
 
-.movie img:hover{
-    opacity: 70%;
+ul.genres{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul.genres li{
+    text-shadow: 2px 2px 5px black;
+    color:  #FAF9F6;
+}
+
+div.movie div.about-movie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.about-movie i{
+    font-size: 1.3em;
+    color: yellow;
+    display: inline;
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+div.about-movie i.empty{
+    color: transparent;
 }
 
 p.movie-name{
