@@ -145,6 +145,7 @@ summary{
     font-size: 0.9em;
     margin-top: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 p.review{

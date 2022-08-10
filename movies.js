@@ -13,13 +13,13 @@ function closeMenu(){
 }
 
 function openMenu(){
-    sideNav.style.width = "42%";
+    sideNav.style.width = "50%";
     
     for(let link of links){
         link.style.display = "block";
     }
 
-    mainContent.style.opacity = "50%";
+    mainContent.style.opacity = "70%";
 }
 
 function showGenres(arr){
