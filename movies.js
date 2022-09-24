@@ -1,6 +1,7 @@
 const links = document.querySelectorAll("div.side-navigation > a");
 const sideNav = document.querySelector("div.side-navigation");
 const mainContent = document.querySelector("div.main-content");
+const movies = document.querySelectorAll(".movie");
 
 function closeMenu(){
     sideNav.style.width = 0;
@@ -66,3 +67,15 @@ function reset(receiver){
     receiver.style.opacity = "100%";
     receiver.parentElement.children[1].innerHTML = "";
 }
+
+const movieObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }else{
+            entry.target.classList.remove("show");
+        }
+    })
+})
+
+movies.forEach((movie) => {movieObserver.observe(movie)});

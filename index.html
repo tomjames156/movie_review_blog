@@ -20,6 +20,7 @@
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3dc4ae978d.js"
     crossorigin="anonymous"></script>
+    <script defer src="movies.js"></script>
 
 </head>
 <body>
@@ -38,7 +39,7 @@
     <div class="main-content">
         <main id="movies">
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Sci-Fi', 'Horror'])" onmouseleave="reset(this)" src="images/stranger_things4.jpg" alt="stranger things">
                     <div class="about-movie" onclick="event.stopPropagation()">
@@ -51,7 +52,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Horror', 'Murder Mystery'], true)" onmouseout="reset(this)" src="images/fear_street.webp" alt="fear street">
                     <div class="about-movie">
@@ -64,7 +65,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 3.5, ['Sitcom'], true)" onmouseout="reset(this)" src="images/icarly.jpg" alt="iCarly">
                     <div class="about-movie">
@@ -77,7 +78,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 5, ['Sci-Fi', 'Horror', 'Comedy', 'Action'], true)" onmouseout="reset(this)" src="images/everything_evrerywhere_all.jpg" alt="everything everywhere all at once">
                     <div class="about-movie">
@@ -91,7 +92,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img  class="movie-img" onmouseover="aboutMovie(this, 4, ['Murder Mystery'], true)" onmouseout="reset(this)" src="images/murder_on_orient_express.jpeg" alt="murder on orient express">
                     <div class="about-movie">
@@ -104,7 +105,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 4, ['Murder Mystery'], true)" onmouseout="reset(this)" src="images/death_on_the_nile.jpg" alt="death on the nile">
                     <div class="about-movie">
@@ -117,7 +118,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 4.5, ['Sci-Fi', 'Comedy', 'Animation'], true)" onmouseout="reset(this)" src="images/sonic_2.jpg" alt="sonic the hedgehog 2">
                     <div class="about-movie">
@@ -130,7 +131,7 @@
                 </details>
             </div>
 
-            <div class="movie">
+            <div class="movie hidden">
                 <div class="image-container">
                     <img class="movie-img" onmouseover="aboutMovie(this, 5, ['Murder Mystery', 'Comedy']), true" onmouseout="reset(this)" src="images/the_afterparty.jpg" alt="The Afterparty">
                     <div class="about-movie">
@@ -213,5 +214,4 @@
     
     </div>
 </body>
-<script src="movies.js"></script>
 </html>
