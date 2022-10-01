@@ -14,7 +14,7 @@ function closeMenu(){
 }
 
 function openMenu(){
-    window.innerWidth >= 1024 ? sideNav.style.width = "30vw" : sideNav.style.width = "50vw";
+    window.innerWidth <= 1024 ? sideNav.style.width = "50vw" : sideNav.style.width = "30vw";
     
     for(let link of links){
         link.style.display = "block";
