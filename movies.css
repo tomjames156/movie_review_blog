@@ -130,6 +130,7 @@ div.image-container{
 
 ul.genres{
     display: flex;
+    list-style-type: none;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -378,6 +379,13 @@ a.tag:not(#active):hover{
     .movie img{
         width: 100%;
         height: auto;
+    }
+
+    ul.genres{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     section#about{
