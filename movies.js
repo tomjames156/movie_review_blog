@@ -4,7 +4,7 @@ const mainContent = document.querySelector("div.main-content");
 const movies = document.querySelectorAll(".movie");
 
 function closeMenu(){
-    sideNav.style.width = 0;
+    sideNav.style.width = "0";
 
     for(let link of links){
         link.style.display = "none";
@@ -14,7 +14,7 @@ function closeMenu(){
 }
 
 function openMenu(){
-    sideNav.style.width = "50%";
+    window.innerWidth >= 1024 ? sideNav.style.width = "30vw" : sideNav.style.width = "50vw";
     
     for(let link of links){
         link.style.display = "block";

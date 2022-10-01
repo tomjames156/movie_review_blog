@@ -23,6 +23,7 @@ div.side-navigation{
     background: white;
     transition: all ease-out 0.3s;
     padding-top: 50px;
+    /* width: 30%; */
 }
 
 div.side-navigation a{
