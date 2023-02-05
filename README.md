@@ -1,3 +1,4 @@
 # Movie Review Blog
 
-Reviews of Movies That I've Watched Recently
+A website that shows reviews of movies that I've watched
+Built with HTML, CSS and Javascript
